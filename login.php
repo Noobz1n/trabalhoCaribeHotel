@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     
     <meta charset="utf-8">
@@ -29,17 +29,17 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="/index.php" class="nav-link">
+              <a href="index.php" class="nav-link">
                 HOME
               </a>
             </li>
             <li class="nav-item">
-              <a href="/cadastro.php" class="nav-link">
+              <a href="cadastro.php" class="nav-link">
                 CADASTRO
               </a>
             </li>
             <li class="nav-item">
-              <a href="/login.php" class="btn btn-outline-light ml-4">
+              <a href="login.php" class="btn btn-outline-light ml-4">
                 LOGIN
               </a>
             </li>

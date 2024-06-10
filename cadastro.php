@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
       <div class="container">
 
         <a href="index.html" class="navbar-brand">
-          <img src="img/ceuamarelo.png" width="130" height="100">
+          <img src="img/ceuamarelo.png" width="130" height="100" alt="">
         </a>
 
         <div class="collapse navbar-collapse">

@@ -1,11 +1,5 @@
-<?php
-
-
-?>
-
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
 
     <meta charset="utf-8">
@@ -30,14 +24,14 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-info">  
       <div class="container">
 
-        <a href="index.php" class="navbar-brand">
+        <a href="index.html" class="navbar-brand">
           <img src="img/ceuamarelo.png" width="130" height="100" alt="">
         </a>
 
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
-              <a href="index.php" class="nav-link">
+              <a href="" class="nav-link">
                 HOME
               </a>
             </li>
