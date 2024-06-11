@@ -37,12 +37,22 @@
             </li>
             <li class="nav-item">
               <a href="cadastro.php" class="nav-link">
-                CADASTRO
+                GALERIA
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro.php" class="nav-link">
+                LOCALIZAÇÃO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro.php" class="nav-link">
+                CONTATO
               </a>
             </li>
             <li class="nav-item">
               <a href="login.php" class="btn btn-outline-light ml-4">
-                LOGIN
+                RESERVAR
               </a>
             </li>
           </ul>
@@ -103,7 +113,7 @@
                 <li class="list-group-item text-center"><strong>28/05</strong> á <strong>31/05</strong></li>
             </ul>
             <div class="card-footer bg-transparent border-top-0 text-center">
-                <a href="#" class="btn btn-custom">Reservar já</a>
+                <a href="#" class="btn btn-custom">Quartos</a>
             </div>
         </div> <!-- FIM DO CARD-->
       </div>
