@@ -11,7 +11,7 @@
     <title>HOTEL BRABO</title>
     <style>
       .gradient-custom {
-          /* Adicione seu estilo de fundo personalizado aqui */
+         
           background: linear-gradient(to right, #55AD9B, #55AD9B);
       }
     </style>
