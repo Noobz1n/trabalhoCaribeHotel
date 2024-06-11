@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <link rel="icon" href="img/ceuamarelo.png" type="image/png">
     <title>HOTEL BRABO</title>
     <style>
       .gradient-custom {
@@ -18,29 +18,39 @@
 </head>
 <body class="reserva gradient-custom">
 
-  <header> <!-- INICIO PARTE DE CIMA-->
-    <nav class="navbar navbar-expand-sm navbar-light bg-info">
+<header> <!-- INICIO PARTE DE CIMA-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-info">  
       <div class="container">
 
-        <a href="index.html" class="navbar-brand">
+        <a href="index.php" class="navbar-brand">
           <img src="img/ceuamarelo.png" width="130" height="100" alt="">
         </a>
 
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.php" class="nav-link">
+            <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
+              <a href="" class="nav-link">
                 HOME
               </a>
             </li>
             <li class="nav-item">
               <a href="cadastro.php" class="nav-link">
-                CADASTRO
+                GALERIA
               </a>
             </li>
             <li class="nav-item">
-              <a href="login.php" class="btn btn-outline-light ml-4">
-                LOGIN
+              <a href="cadastro.php" class="nav-link">
+                LOCALIZAÇÃO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro.php" class="nav-link">
+                CONTATO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro.php" class="btn btn-outline-light ml-4">
+                RESERVAR
               </a>
             </li>
           </ul>

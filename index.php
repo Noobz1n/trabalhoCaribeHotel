@@ -11,7 +11,7 @@
     <!-- Font Awesome, esse é um site que da para pegar icone de coisas  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    
+    <link rel="icon" href="img/ceuamarelo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <title>HOTEL BRABO</title>
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-info">  
       <div class="container">
 
-        <a href="index.html" class="navbar-brand">
+        <a href="index.php" class="navbar-brand">
           <img src="img/ceuamarelo.png" width="130" height="100" alt="">
         </a>
 
@@ -41,7 +41,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="localizacao.php" class="nav-link">
                 LOCALIZAÇÃO
               </a>
             </li>
@@ -51,7 +51,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="login.php" class="btn btn-outline-light ml-4">
+              <a href="cadastro.php" class="btn btn-outline-light ml-4">
                 RESERVAR
               </a>
             </li>
