@@ -137,6 +137,34 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <select id="numPessoas" class="form-control form-control-lg">
+                            <option value="" disabled selected>Selecione o número de pessoas</option>
+                            <option value="1">1 Pessoa</option>
+                            <option value="2">2 Pessoas</option>
+                            <option value="3">3 Pessoas</option>
+                            <option value="4">4 Pessoas</option>
+                            <option value="5">5 Pessoas</option>
+                          </select>
+                          <label class="form-label" for="numPessoas">Número de Pessoas</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <select id="numQuartos" class="form-control form-control-lg">
+                            <option value="" disabled selected>Selecione o número de quartos</option>
+                            <option value="1">1 Quarto</option>
+                            <option value="2">2 Quartos</option>
+                            <option value="3">3 Quartos</option>
+                            <option value="4">4 Quartos</option>
+                          </select>
+                          <label class="form-label" for="numQuartos">Número de Quartos</label>
+                        </div>
+                      </div>
+                    </div>
     
                     <div class="mt-4 pt-2">
                       <input class="btn btn-primary btn-lg" type="submit" value="Reservar">
@@ -148,7 +176,7 @@
         </div>
       </div>
     </div>
-</section>
+  </section>
 
 <footer class="mt-6 bg-info text-white py-4">
   <div class="container">
