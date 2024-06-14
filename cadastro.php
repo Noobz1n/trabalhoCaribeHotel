@@ -1,5 +1,37 @@
+<?php
+
+
+  // AQUI ESTA IMPORTANDO A CONEXAO DO BANCO
+  include_once('config.php');
+
+  // aqui verifica se tá recebndo os dados
+  if(isset($_POST['submit'])) 
+  {
+    $nome = $_POST['firstName']; // O QUE ESTÁ ENTRE '' É O "name" NO FORMULARIO
+    $sobrenome = $_POST['lastName'];
+    $cpf = $_POST['cpf'];
+    $email = $_POST['email'];
+    $tel = $_POST['telefone'];
+    $data_chegada = $_POST['data_chegada'];
+    $data_saida = $_POST['data_saida'];
+
+    //verificacao do sexo
+    if(isset($_POST['inlineRadioOptions'])) {
+      $sexo = $_POST['inlineRadioOptions'];
+    } else {
+      // Se nenhuma opção for selecionada, define como vazio ou algum valor padrão, conforme necessário
+      $sexo = ""; // ou outra ação
+    }
+
+
+    //AQUI ENVIA OS DADOS PARA O BANCO
+    $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, sobrenome, cpf, email, tel, sexo, data_chegada, data_saida) VALUES ('$nome', '$sobrenome', '$cpf', '$email', '$tel', '$sexo', '$data_chegada', '$data_saida')");
+  }
+  
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,17 +66,17 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="index.php" class="nav-link">
                 GALERIA
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="localizacao.php" class="nav-link">
                 LOCALIZAÇÃO
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="index.php" class="nav-link">
                 CONTATO
               </a>
             </li>
@@ -67,18 +99,19 @@
           <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
             <div class="card-body p-4 p-md-5">
               <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Reserva de Estadia</h3>
-                <form>
+
+                <form action="cadastro.php" method="POST">
   
                     <div class="row">
                       <div class="col-md-6 mb-4">
                         <div class="form-outline">
-                          <input type="text" id="firstName" class="form-control form-control-lg">
+                          <input type="text" id="firstName" name="firstName" class="form-control form-control-lg">
                           <label class="form-label" for="firstName">Nome</label>
                         </div>
                       </div>
                       <div class="col-md-6 mb-4">
                         <div class="form-outline">
-                          <input type="text" id="lastName" class="form-control form-control-lg">
+                          <input type="text" id="lastName" name="lastName" class="form-control form-control-lg">
                           <label class="form-label" for="lastName">Sobrenome</label>
                         </div>
                       </div>
@@ -87,7 +120,7 @@
                     <div class="row">
                       <div class="col-md-6 mb-4 d-flex align-items-center">
                         <div class="form-outline datepicker w-100">
-                          <input type="text" class="form-control form-control-lg" id="cpf">
+                          <input type="text" name="cpf" class="form-control form-control-lg" id="cpf">
                           <label for="cpf" class="form-label">CPF</label>
                         </div>
                       </div>
@@ -111,13 +144,13 @@
                     <div class="row">
                       <div class="col-md-6 mb-4 pb-2">
                         <div class="form-outline">
-                          <input type="email" id="emailAddress" class="form-control form-control-lg">
+                          <input type="email" name="email" id="emailAddress" class="form-control form-control-lg">
                           <label class="form-label" for="emailAddress">Email</label>
                         </div>
                       </div>
                       <div class="col-md-6 mb-4 pb-2">
                         <div class="form-outline">
-                          <input type="tel" id="phoneNumber" class="form-control form-control-lg">
+                          <input type="tel" name="telefone" id="phoneNumber" class="form-control form-control-lg">
                           <label class="form-label" for="phoneNumber">Número de telefone</label>
                         </div>
                       </div>
@@ -126,13 +159,13 @@
                     <div class="row">
                       <div class="col-md-6 mb-4">
                         <div class="form-outline">
-                          <input type="date" id="checkinDate" class="form-control form-control-lg">
+                          <input type="date" name="data_chegada" id="checkinDate" class="form-control form-control-lg">
                           <label class="form-label" for="checkinDate">Data de Chegada</label>
                         </div>
                       </div>
                       <div class="col-md-6 mb-4">
                         <div class="form-outline">
-                          <input type="date" id="checkoutDate" class="form-control form-control-lg">
+                          <input type="date" name="data_saida" id="checkoutDate" class="form-control form-control-lg">
                           <label class="form-label" for="checkoutDate">Data de Saída</label>
                         </div>
                       </div>
@@ -167,7 +200,7 @@
                     </div>
     
                     <div class="mt-4 pt-2">
-                      <input class="btn btn-primary btn-lg" type="submit" value="Reservar">
+                      <input class="btn btn-primary btn-lg" type="submit" name="submit" value="Reservar">
                     </div>
   
                 </form>

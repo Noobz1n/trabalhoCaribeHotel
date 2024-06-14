@@ -34,17 +34,17 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="index.php" class="nav-link">
                 GALERIA
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="localizacao.php" class="nav-link">
                 LOCALIZAÇÃO
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="index.php" class="nav-link">
                 CONTATO
               </a>
             </li>
