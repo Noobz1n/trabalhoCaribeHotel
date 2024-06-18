@@ -25,19 +25,19 @@
       <div class="container">
 
         <a href="index.php" class="navbar-brand">
-          <img src="img/ceuamarelo.png" width="130" height="100" alt="">
+          <img src="img/ceuamarelo2.png" width="130" height="100" alt="">
         </a>
 
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
-              <a href="" class="nav-link">
+              <a href="index.php" class="nav-link">
                 HOME
               </a>
             </li>
-            <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
-                GALERIA
+            <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
+              <a href="promos.php" class="nav-link">
+                PROMOÇÕES
               </a>
             </li>
             <li class="nav-item">
@@ -46,8 +46,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
+              <a href="contato.php" class="nav-link">
                 CONTATO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.php" class="nav-link">
+                LOGIN
               </a>
             </li>
             <li class="nav-item">
@@ -81,8 +86,6 @@
                 </div>
               </div>
             </form>
-
-
           </div>
         </div>
         <div class="col-md-6">
@@ -92,33 +95,96 @@
     </div>
   </section> <!-- FINAL DA PARTE AZUL DO MEIO-->
 
+  <br>
   <section> <!-- INICIO DA PARTE DE BAIXO DO AZUL-->
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 d-flex"> <!-- INICIO DO TEXTO NA ESQUERDA -->
-          <div class="align-self-center">
-            <h2>Por que escolher nosso hotel?</h2>
-            <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-            <a href="" class="btn btn-primary"> Veja mais </a>
-          </div>
-        </div> <!-- FIM DO TEXTO DA ESQUERDA -->
-        <div class="col-md-6 mt-4"> <!-- INICIO DO CARD-->
-          <div class="card border-0 shadow" style="width: 18rem;">
-            <img class="card-img-top rounded-top" src="img/familia.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title text-center mb-0">Quartos para toda família</h5>
-                <p class="card-text text-center">2 noites para 4 pessoas</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center"><strong>28/05</strong> á <strong>31/05</strong></li>
-            </ul>
-            <div class="card-footer bg-transparent border-top-0 text-center">
-                <a href="#" class="btn btn-custom">Quartos</a>
-            </div>
-        </div> <!-- FIM DO CARD-->
-      </div>
+        <div class="row">
+            <div class="col-md-6 d-flex"> <!-- INICIO DO TEXTO NA ESQUERDA -->
+                <div class="align-self-center">
+                    <h2>Por que escolher nosso hotel?</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                    <a href="#" class="btn btn-primary">Veja mais</a>
+                </div>
+            </div> <!-- FIM DO TEXTO NA ESQUERDA -->
+
+            <div class="col-md-6"> <!-- INICIO DOS CARDS À DIREITA -->
+                <div class="row justify-content-end">
+                    <div class="col-lg-6 col-md-12 mb-4"> <!-- Primeiro Card -->
+                        <div class="card border-0 shadow">
+                            <img class="card-img-top rounded-top" src="img/familia.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mb-0">Quartos para toda família</h5>
+                                <p class="card-text text-center">2 noites para 4 pessoas</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center"><strong>28/05</strong> a <strong>31/05</strong></li>
+                            </ul>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="cadastro.php" class="btn btn-custom">Reserve</a>
+                            </div>
+                        </div> <!-- FIM DO CARD-->
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 mb-4"> <!-- Segundo Card -->
+                        <div class="card border-0 shadow">
+                            <img class="card-img-top rounded-top" src="img/casal.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mb-0">Opções de quartos para casais</h5>
+                                <p class="card-text text-center">3 noites com jantar incluso</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center"><strong>15/06</strong> a <strong>18/06</strong></li>
+                            </ul>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="cadastro.php" class="btn btn-custom">Reserve</a>
+                            </div>
+                        </div> <!-- FIM DO CARD-->
+                    </div>
+                </div>
+            </div> <!-- FIM DOS CARDS À DIREITA -->
+        </div>
     </div>
-  </section> <!-- FIM PARTE DE BAIXO DA AZUL-->
+</section> <!-- FIM PARTE DE BAIXO DA AZUL-->
+<section> <!-- Carrossel com efeito de desfoque -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/ForaDoHotel.jpg" alt="Primeiro Slide" style="max-height: 650px; object-fit: cover; filter: blur(0px);">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Aréa externa grande</h5>
+                    <p>Aproveite nosso espaço externo com piscina</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/quarto.jpg" alt="Segundo Slide" style="max-height: 650px; object-fit: cover; filter: blur(0px);">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Quartos espaçosos</h5>
+                    <p>Quartos limpos e com muito espaço para você e sua família</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/comida.jpg" alt="Terceiro Slide" style="max-height: 650px; object-fit: cover; filter: blur(0px);">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Café da manhã e restaurante</h5>
+                    <p>Prove nosso delicoso cardápio</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</section>
+
+
+
+
+
 
   <footer class="mt-4 bg-info text-white py-4"> <!-- INICIO DO RODAPÉ-->
     <div class="container">
@@ -147,7 +213,9 @@
 
 
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 

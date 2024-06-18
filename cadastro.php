@@ -55,19 +55,19 @@
       <div class="container">
 
         <a href="index.php" class="navbar-brand">
-          <img src="img/ceuamarelo.png" width="130" height="100" alt="">
+          <img src="img/ceuamarelo2.png" width="130" height="100" alt="">
         </a>
 
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
-              <a href="" class="nav-link">
+              <a href="index.php" class="nav-link">
                 HOME
               </a>
             </li>
-            <li class="nav-item">
-              <a href="index.php" class="nav-link">
-                GALERIA
+            <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
+              <a href="promos.php" class="nav-link">
+                PROMOÇÕES
               </a>
             </li>
             <li class="nav-item">
@@ -76,8 +76,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="index.php" class="nav-link">
+              <a href="contato.php" class="nav-link">
                 CONTATO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.php" class="nav-link">
+                LOGIN
               </a>
             </li>
             <li class="nav-item">

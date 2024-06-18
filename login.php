@@ -18,29 +18,44 @@
   <style type="text/css" id="operaUserStyle"></style></head>
 <body class="login">
 
-  <header> <!-- INICIO PARTE DE CIMA-->
-    <nav class="navbar navbar-expand-sm navbar-light bg-info">
+<header> <!-- INICIO PARTE DE CIMA-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-info">  
       <div class="container">
 
-        <a href="index.html" class="navbar-brand">
-          <img src="img/ceuamarelo.png" width="130" height="100" alt="">
+        <a href="index.php" class="navbar-brand">
+          <img src="img/ceuamarelo2.png" width="130" height="100" alt="">
         </a>
 
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
               <a href="index.php" class="nav-link">
                 HOME
               </a>
             </li>
-            <li class="nav-item">
-              <a href="cadastro.php" class="nav-link">
-                CADASTRO
+            <li class="nav-item"> <!-- SE QUISER ADICIONAR MAIS COISA NA BARRA É SO COPIAR ESSE LI E COLAR EM BAIXO DO ULTIMO, SEMPRE DENTRO DO UL-->
+              <a href="promos.php" class="nav-link">
+                PROMOÇÕES
               </a>
             </li>
             <li class="nav-item">
-              <a href="login.php" class="btn btn-outline-light ml-4">
+              <a href="localizacao.php" class="nav-link">
+                LOCALIZAÇÃO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contato.php" class="nav-link">
+                CONTATO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.php" class="nav-link">
                 LOGIN
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro.php" class="btn btn-outline-light ml-4">
+                RESERVAR
               </a>
             </li>
           </ul>
@@ -58,7 +73,7 @@
     
 
         <form>
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="Nome do usuário ou e-mail">
+            <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail">
             <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha">
             <input type="submit" class="fadeIn fourth" value="Login">
         </form>

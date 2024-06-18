@@ -316,8 +316,44 @@ footer p a{  /* ISSO DEFINE A DISTANCIA DOS ICONES DE REDE SOCIAL NO RODAPÉ  */
 }
 
 
-/********************************INICIO PARTE localização****************************/
-
+/********************************INICIO PARTE galeria****************************/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.gallery-item {
+  position: relative;
+  width: calc(33.333% - 10px);
+  margin-bottom: 15px;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.gallery-item:hover img {
+  opacity: 0.8;
+}
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.gallery-item:hover .overlay{
+  opacity: 1;}
 
 
 
