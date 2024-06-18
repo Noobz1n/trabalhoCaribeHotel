@@ -7,9 +7,9 @@
   if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
     unset($_SESSION['email']);
     unset($_SESSION['email']);
-    header('Location: login.php');
+    //header('Location: login.php');
   }
-  $logado = $_SESSION['email'];
+  //$logado = $_SESSION['email'];
 ?>
 
 

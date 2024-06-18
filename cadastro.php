@@ -41,6 +41,7 @@
   }
   else {
       $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, sobrenome, senha, cpf, email, tel, sexo, data_chegada, data_saida) VALUES ('$nome', '$sobrenome','$senha' ,'$cpf', '$email', '$tel', '$sexo', '$data_chegada', '$data_saida')");
+      echo '<script>alert("cadastro criado com sucesso!");</script';
   }
   }
   
