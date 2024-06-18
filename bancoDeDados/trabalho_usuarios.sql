@@ -23,17 +23,18 @@ DROP TABLE IF EXISTS `usuarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `sobrenome` varchar(45) NOT NULL,
-  `cpf` varchar(1) NOT NULL,
+  `senha` varchar(45) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
   `email` varchar(130) NOT NULL,
   `tel` varchar(15) NOT NULL,
   `sexo` varchar(15) NOT NULL,
   `data_chegada` date NOT NULL,
   `data_saida` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,6 +43,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (1,'','','','','','','','0000-00-00','0000-00-00'),(3,'victor','adriano','123456','01234567891','trabalho@gmail.com','40028922','masculino','2024-06-15','2024-06-20'),(4,'victor','adriano','123456','01234567891','trabalho@gmail.com','40028922','masculino','2024-06-15','2024-06-20'),(5,'victor','adriano','123','14464168442','teste@gmail.com','1234123123','option1','2024-06-16','2024-06-20'),(6,'victor','asdasd','asdasd','14464168442','teste@gmail.com','1234123123','option1','2024-06-10','2024-06-18'),(7,'victor','adriano','123456','01234567891','trabalho@gmail.com','1234123123','option1','2024-06-12','2024-06-25'),(8,'teste','teste','12345','12345','trabson@gmail.com','1234123123','option1','2024-06-12','2024-06-18'),(9,'Login','Trabalho','123','0123456789','trabalho@gmail.com','40028922','option1','2024-06-12','2024-06-19');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -54,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-13 20:34:28
+-- Dump completed on 2024-06-18 16:58:59
