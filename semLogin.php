@@ -35,7 +35,7 @@
 <!--
   
 -->
-  <header> <!-- INICIO PARTE DE CIMA-->
+<header> <!-- INICIO PARTE DE CIMA-->
     <nav class="navbar navbar-expand-sm navbar-light bg-info">  
       <div class="container">
 
@@ -65,8 +65,15 @@
                 CONTATO
               </a>
             </li>
-            <li class="btn btn-danger ml-4">
-                <a href="sair.php">SAIR</a>
+            <li class="nav-item">
+              <a href="reserva.php" class="nav-link">
+               RESERVAS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.php" class="btn btn-outline-light ml-4"style="color: white; background-color: #6f0909; border: 1px solid #6f0909;">
+                SAIR
+              </a>
             </li>
           </ul>
         </div>

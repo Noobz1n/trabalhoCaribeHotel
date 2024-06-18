@@ -316,6 +316,12 @@ footer p a{  /* ISSO DEFINE A DISTANCIA DOS ICONES DE REDE SOCIAL NO RODAPÉ  */
 }
 
 
+#totalValueDisplay {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff; /* Cor azul para destaque */
+}
+
 /********************************INICIO PARTE galeria****************************/
 .gallery {
   display: flex;
@@ -354,3 +360,4 @@ footer p a{  /* ISSO DEFINE A DISTANCIA DOS ICONES DE REDE SOCIAL NO RODAPÉ  */
 }
 .gallery-item:hover .overlay{
   opacity: 1;}
+
