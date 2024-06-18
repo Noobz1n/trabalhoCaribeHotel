@@ -65,15 +65,8 @@
                 CONTATO
               </a>
             </li>
-            <li class="nav-item">
-              <a href="login.php" class="nav-link">
-                LOGIN
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="cadastro.php" class="btn btn-outline-light ml-4">
-                RESERVAR
-              </a>
+            <li class="btn btn-danger ml-4">
+                <a href="sair.php">SAIR</a>
             </li>
           </ul>
         </div>

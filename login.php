@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     
     <meta charset="utf-8">
@@ -23,7 +23,7 @@
       <div class="container">
 
         <a href="index.php" class="navbar-brand">
-          <img src="img/ceuamarelo2.png" width="130" height="100" alt="">
+          <img src="img/ceuamarelo2.png" width="130" height="100">
         </a>
 
         <div class="collapse navbar-collapse">
@@ -72,10 +72,10 @@
         </div>
     
 
-        <form>
-            <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail">
-            <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha">
-            <input type="submit" class="fadeIn fourth" value="Login">
+        <form action="testLogin.php" method="POST">
+            <input type="email" id="email" class="fadeIn second" name="email" placeholder="E-mail">
+            <input type="password" id="senha" class="fadeIn third" name="senha" placeholder="Senha">
+            <input type="submit" class="fadeIn fourth" value="Login" name="submit">
         </form>
     
         <div id="formFooter">

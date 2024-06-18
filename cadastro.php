@@ -9,11 +9,13 @@
   {
     $nome = $_POST['firstName']; // O QUE ESTÁ ENTRE '' É O "name" NO FORMULARIO
     $sobrenome = $_POST['lastName'];
+    $senha = $_POST['senha'];
     $cpf = $_POST['cpf'];
     $email = $_POST['email'];
     $tel = $_POST['telefone'];
     $data_chegada = $_POST['data_chegada'];
     $data_saida = $_POST['data_saida'];
+
 
     //verificacao do sexo
     if(isset($_POST['inlineRadioOptions'])) {
@@ -24,8 +26,22 @@
     }
 
 
-    //AQUI ENVIA OS DADOS PARA O BANCO
-    $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, sobrenome, cpf, email, tel, sexo, data_chegada, data_saida) VALUES ('$nome', '$sobrenome', '$cpf', '$email', '$tel', '$sexo', '$data_chegada', '$data_saida')");
+
+    $sql = "SELECT * FROM usuarios WHERE email = '$email'";
+    $sql2 = "SELECT * from usuarios where cpf = '$cpf'";
+    $result = $conexao->query($sql);
+    $result2 = $conexao->query($sql2);
+
+    if ($result->num_rows > 0) {
+      // Email já está cadastrado, retornar alerta em JavaScript
+      echo '<script>alert("Email já cadastrado. Por favor, escolha outro email.");</script>';
+  } 
+  elseif($result2->num_rows > 0) {
+    echo '<script>alert("CPF já cadastrado. Por favor, digite outro CPF.");</script>';
+  }
+  else {
+      $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, sobrenome, senha, cpf, email, tel, sexo, data_chegada, data_saida) VALUES ('$nome', '$sobrenome','$senha' ,'$cpf', '$email', '$tel', '$sexo', '$data_chegada', '$data_saida')");
+  }
   }
   
 ?>
@@ -43,7 +59,6 @@
     <title>HOTEL BRABO</title>
     <style>
       .gradient-custom {
-         
           background: linear-gradient(to right, #55AD9B, #55AD9B);
       }
     </style>
@@ -114,6 +129,7 @@
                           <label class="form-label" for="firstName">Nome</label>
                         </div>
                       </div>
+              
                       <div class="col-md-6 mb-4">
                         <div class="form-outline">
                           <input type="text" id="lastName" name="lastName" class="form-control form-control-lg">
@@ -121,7 +137,25 @@
                         </div>
                       </div>
                     </div>
-    
+                  
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="email" id="email" name="email" class="form-control form-control-lg">
+                          <label class="form-label" for="usuario">Email</label>
+                        </div>
+                      </div>
+              
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="password" id="senha" name="senha" class="form-control form-control-lg">
+                          <label class="form-label" for="senha">Senha</label>
+                        </div>
+                      </div>
+                    </div>
+
+
                     <div class="row">
                       <div class="col-md-6 mb-4 d-flex align-items-center">
                         <div class="form-outline datepicker w-100">
@@ -147,12 +181,7 @@
                     </div>
     
                     <div class="row">
-                      <div class="col-md-6 mb-4 pb-2">
-                        <div class="form-outline">
-                          <input type="email" name="email" id="emailAddress" class="form-control form-control-lg">
-                          <label class="form-label" for="emailAddress">Email</label>
-                        </div>
-                      </div>
+
                       <div class="col-md-6 mb-4 pb-2">
                         <div class="form-outline">
                           <input type="tel" name="telefone" id="phoneNumber" class="form-control form-control-lg">
