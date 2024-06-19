@@ -4,7 +4,7 @@
   // AQUI ESTA IMPORTANDO A CONEXAO DO BANCO
   include_once('config.php');
 
-  // aqui verifica se tá recebndo os dados
+  // aqui verifica se tá recebendo os dados
   if(isset($_POST['submit'])) 
   {
     $nome = $_POST['firstName']; // O QUE ESTÁ ENTRE '' É O "name" NO FORMULARIO
@@ -40,10 +40,14 @@
     echo '<script>alert("CPF já cadastrado. Por favor, digite outro CPF.");</script>';
   }
   else {
-      $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, sobrenome, senha, cpf, email, tel, sexo, data_chegada, data_saida) VALUES ('$nome', '$sobrenome','$senha' ,'$cpf', '$email', '$tel', '$sexo', '$data_chegada', '$data_saida')");
-      echo '<script>alert("cadastro criado com sucesso!");</script';
-  }
-  }
+    // Hash da senha
+    $hashedPassword = password_hash($senha, PASSWORD_DEFAULT);
+
+    // Dadosinseridos no banco
+    $result = mysqli_query($conexao, "INSERT INTO usuarios (nome, sobrenome, senha, cpf, email, tel, sexo, data_chegada, data_saida) VALUES ('$nome', '$sobrenome', '$hashedPassword', '$cpf', '$email', '$tel', '$sexo', '$data_chegada', '$data_saida')");
+    echo '<script>alert("cadastro criado com sucesso!");</script>';
+}
+}
   
 ?>
 
